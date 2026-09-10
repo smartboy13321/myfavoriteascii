@@ -1,0 +1,19 @@
+toukocard:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:paper
+    count: 1
+    components:
+      minecraft:lore: '[{extra:[{bold:0b,color:"red",italic:1b,text:"Mage"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"\"A puppet master and sister of Aoko."}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"Brilliant, manipulative, and deeply"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"entrenched in the world of Magecraft.\""}],text:""},
+        {extra:[{color:"dark_purple",bold:1b,text:"Touko Aozaki"}],text:""},
+        {extra:[{color:"dark_purple",text:"*･ﾟ✧Series: "},{color:"white",italic:0b,text:"Kara no Kyōkai (1998)"}],text:""},
+        {extra:[{color:"dark_purple",text:"*･ﾟ✧Age: "},{color:"white",italic:0b,text:"Unknown"}],text:""},
+        {extra:[{color:"dark_purple",text:"*･ﾟ✧Likes: "},{color:"white",italic:0b,text:"Craftsmanship, cigars"}],text:""},
+        {extra:[{color:"dark_purple",text:"*･ﾟ✧Dislikes: "},{color:"white",italic:0b,text:"Weakness, hesitation"}],text:""},
+        {extra:[{color:"dark_purple",text:"*･ﾟ✧Signature: "},{color:"white",italic:0b,text:"Puppet magecraft, Mystic Eyes"}],text:""}]'
+      minecraft:custom_name: '{extra:[{text:"Touko "},{color:"gray",text:"["},{color:"dark_purple",text:"Legendary"},{color:"gray",text:"]"}],text:""}'
+    schema_version: 1

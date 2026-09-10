@@ -1,0 +1,58 @@
+holylight:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  icon: blessing
+  category: master
+  worth: 700
+  earns: 8
+  actions:
+    cast:
+    - class: AreaOfEffect
+      actions:
+      - class: CheckEntity
+        allowed_entities: player
+        actions:
+        - class: Heal
+          amount: 2
+        - class: PlayEffects
+          effects: heal
+          ignore_result: true
+      - class: CheckEntity
+        denied_entities: player
+        actions:
+        - class: Damage
+        - class: PlayEffects
+          effects: hurt
+          ignore_result: true
+  effects:
+    heal:
+    - class: EffectSingle
+      
+      sound: entity_villager_yes
+      location: origin
+      effectlib:
+        class: HelixEffect
+        particle: heart
+        iterations: 10
+        radius: 2
+    hurt:
+    - class: EffectSingle
+      sound: entity_bat_hurt
+      location: origin
+      effectlib:
+        class: HelixEffect
+        particle: smoke_normal
+        iterations: 10
+        radius: 2
+  parameters:
+    target: self
+    target_caster: true
+    target_type: LivingEntity
+    allow_caster: true
+    amount: 2
+    damage: 2
+    entity_damage: 2
+    radius: 16
+    cooldown: 3000
+  costs:
+    mana: 150

@@ -1,0 +1,21 @@
+# This is the key name of this spell
+# It must be unique across the server, and is used in configs and commands such as /mage, /wand and /mgive
+# to refer to this spell.
+iconshop:
+  # These track who created what spells, you can remove them if you want
+  creator: spacecostume1
+  creator_id: 63922a05-1d30-4fb4-9be0-8452537be79f
+  # Name and description may be added here and will appear in lore for this spell.
+  name: Wand Appearance Shop
+  description: Browse wand skins and transform the appearance of your wand to your liking.
+  # Choose an icon, used when showing this spell in a wand inventory.
+  icon: chest
+  actions:
+    cast:
+    - class: Command
+  # Parameters change how a spell behaves, these may be base spell parameters or
+  # specific to the set of actions you are using.
+  parameters:
+    command: "say hi @p"
+    range: 32
+    damage: 10

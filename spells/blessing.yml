@@ -1,0 +1,69 @@
+blessing:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  icon: blessing
+  category: master
+  worth: 700
+  earns: 8
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+      - class: AreaOfEffect
+        actions:
+        - class: PotionEffect
+  effects:
+    cast:
+    - sound: block_beacon_activate
+      sound_pitch: 1.2
+      sound_volume: 1.2
+      location: both
+    tick:
+    - location: target
+      particle: end_rod
+      particle_count: 20
+      particle_offset_x: 0.1
+      particle_offset_y: 0.1
+      particle_offset_z: 0.1
+    hit:
+    - sound: block_beacon_deactivate
+      sound_pitch: 1.8
+      sound_volume: 1.2
+      location: both
+    - location: target
+      effectlib:
+        class: HelixEffect
+        particle: end_rod
+        iterations: 1
+        particles: 40
+        particle_count: 4
+        particle_offset_x: 0.2
+        particle_offset_y: 0.01
+        particle_offset_z: 0.2
+        offset: 0,0.1,0
+        radius: $radius
+    cast_finish:
+    - location: targets
+      sound: block_beacon_deactivate
+      sound_pitch: 0.8
+      sound_volume: 0.8
+      effectlib:
+        class: Love
+        iterations: 20
+  parameters:
+    target_type: Player
+    projectile: Snowball
+    effect_heal: 2
+    effect_damage_resistance: 2
+    effect_fire_resistance: 2
+    duration: 50000
+    radius: 8
+    target_self_timeout: 100
+    cooldown: 30000
+    bypass_friendly_fire: true
+    only_friendly: true
+    gravity: 0.05
+    velocity: 15
+    range: 8
+  costs:
+    mana: 200

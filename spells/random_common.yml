@@ -1,0 +1,236 @@
+random_common:
+  icon: diamond
+  name: Random Common Card
+  description: "Draws a random Common card."
+  # Add other spell properties like costs, cooldowns, etc. if desired.
+  actions:
+    cast:
+      - class: PlaySound
+        sound: entity_firework_rocket_launch
+      - class: Firework
+        launch: true
+        trail: true
+        color: "#40e0d0"
+        speed: 0
+        firework: star
+        start: 0
+        color2: "#ba55d3"
+      - class: Message
+        message: "&7You open a &bCommon&7 pack...!"
+      - class: Random
+        actions:
+          - class: Command
+            command: 'mgive @p uncommonaoko'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonrin'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonillya'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonkirei'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonsakura'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommontouko'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonarcueid'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonsion'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonnrvnqsr'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommoneliza'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonrachel'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonciel'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonshiki'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonkonata'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonkagami'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommontsukasa'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonmiyuki'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonmakoto'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonai'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonruby'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonaqua'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonannie'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonaoi'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonfortune'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonluna'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonartemis'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonblair'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonfelicia'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonmechhisui'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonrobofortune'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonjacko'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonelphelt'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonroboky'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonnu'
+            weight: 1
+          - class: Command
+            command: 'mgive @p uncommonlambda'
+            weight: 1
+      - class: Repeat
+        repeat: 6
+        actions:
+          - class: Random
+            actions:
+              - class: Command
+                command: 'mgive @p commonaoko'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonrin'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonillya'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonkirei'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonsakura'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commontouko'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonarcueid'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonsion'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonnrvnqsr'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commoneliza'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonrachel'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonciel'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonshiki'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonkonata'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonkagami'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commontsukasa'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonmiyuki'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonmakoto'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonai'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonruby'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonaqua'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonannie'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonaoi'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonfortune'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonluna'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonartemis'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonblair'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonfelicia'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonmechhisui'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonrobofortune'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonjacko'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonelphelt'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonroboky'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonnu'
+                weight: 1
+              - class: Command
+                command: 'mgive @p commonlambda'
+                weight: 1

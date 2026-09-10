@@ -1,0 +1,77 @@
+colorshop:
+    # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+    inherit: false
+    icon: red_dye{18001}
+    icon_disabled: red_dye{CustomModelData:18002}
+    legacy_icon: spell_icon:125
+    legacy_icon_disabled: spell_icon_disabled:125
+    icon_url: http://textures.minecraft.net/texture/4e693cf3b7bf83248527aacc2714638b55587cde593963d1f861884f5be1638
+    category: npc
+    hidden: true
+    actions:
+        cast:
+        -  class: Selector
+    parameters:
+        quiet: true
+        confirm_filler: stained_glass:9
+        confirm: true
+        requirements:
+        - holding_wand: true
+        cost_type: currency
+        unlock_section: wand_colors
+        show_unavailable: true
+        apply_to_wand: true
+        options:
+        - item: blueeffects
+          cost: 400000
+          unlock: "blue"
+        - item: redeffects
+          cost: 200000
+          unlock: "red"
+        - item: purpleeffects
+          cost: 130000
+          unlock: "purple"
+        - item: whiteeffects
+          cost: 128000
+          unlock: "white"
+        - item: greeneffects
+          cost: 64000
+          unlock: "green"
+        - item: yelloweffects
+          cost: 63000
+          unlock: "yellow"
+        - item: lightblueeffects
+          cost: 1500
+          unlock: "lightblue"
+        - item: aquaeffects
+          cost: 1500
+          unlock: "aqua"
+        - item: blackeffects
+          cost: 1500
+          unlock: "black"
+        - item: orangeeffects
+          cost: 200
+          unlock: "orange"
+        - item: pinkeffects
+          cost: 200
+          unlock: "pink"
+        - item: magentaeffects
+          cost: 200
+          unlock: "magenta"
+        - item: grayeffects
+          cost: 200
+          unlock: "gray"
+        - item: lightgrayeffects
+          cost: 200
+          unlock: "lightgray"
+        - item: browneffects
+          cost: 200
+          unlock: "brown"
+        - item: darkgreeneffects
+          cost: 200
+          unlock: "darkgreen"
+        - item: none
+        - item: randomeffects
+          cost_type: sp
+          selected: "You randomized your effect color"
+          cost: 200

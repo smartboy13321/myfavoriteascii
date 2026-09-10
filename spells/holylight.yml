@@ -1,0 +1,65 @@
+holylight:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  icon: blessing
+  category: master
+  worth: 700
+  earns: 8
+  actions:
+    cast:
+    - class: AreaOfEffect
+      actions:
+      - class: CheckEntity
+        allowed_entities: player
+        actions:
+        - class: Heal
+        - class: PotionEffect
+          duration: 5000
+          add_effects:
+            regeneration: 3
+        - class: PlayEffects
+          effects: heal
+          ignore_result: true
+      - class: CheckEntity
+        denied_entities: player
+        actions:
+        - class: Damage
+        - class: PotionEffect
+          duration: 4000
+          add_effects:
+            poison: 3
+        - class: PlayEffects
+          effects: hurt
+          ignore_result: true
+  effects:
+    heal:
+    - class: EffectSingle
+      sound: magic.zap
+      location: origin
+      effectlib:
+        class: Cylinder
+        particle: heart
+        iterations: 1
+        particles: 3
+        radius: 2
+    hurt:
+    - class: EffectSingle
+      sound: magic.shield
+      location: origin
+      effectlib:
+        class: Warp
+        particle: damage_indicator
+        color: "#fffafa"
+        particles: 42
+        iterations: 4
+        radius: 5
+  parameters:
+    target: any
+    target_self: true
+    allow_caster: true
+    amount: 1
+    damage: 10
+    radius: 7
+    cooldown: 1000
+  costs:
+    mana: 150

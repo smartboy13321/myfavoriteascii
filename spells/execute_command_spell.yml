@@ -1,0 +1,10 @@
+# Example: execute_command_spell.yml
+execute_command_spell:
+  spell:
+    actions:
+      - command:
+          command: "give %player% diamond 1" # Replace with your desired command
+    effects:
+      - message: "&aYou have redeemed your command voucher!"
+    properties:
+      consume_item: true

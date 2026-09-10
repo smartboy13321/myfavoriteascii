@@ -1,0 +1,86 @@
+holyboom:
+  inherit: false
+  icon: boom
+  alias: kaboom
+  category: combat
+  pvp_restricted: true
+  worth: 200
+  earns: 3
+  actions:
+    cast:
+    - class: AreaOfEffect
+      radius: 4
+      actions:
+      - class: CheckEntity
+        denied_entities: player
+        actions:
+          - class: Ignite
+            duration: 5000
+      - class: Damage
+        damage: 4
+        entity_damage: 4
+        player_damage: 4
+    - class: CustomProjectile
+      actions:
+      - class: Explosion
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: entity_ender_dragon_hurt
+      location: origin
+    - sound: entity_generic_explode
+      sound_pitch: 2
+      sound_volume: 0.2
+      location: origin
+    - sound: entity_ender_dragon_hurt
+      sound_pitch: 2
+      sound_volume: 1.5
+      location: origin
+    tick:
+    - particle: redstone
+      color: 8A084B
+      location: target
+    - location: target
+      particle: fireworks_spark
+      particle_count: 6
+      particle_offset_x: 0.5
+      particle_offset_y: 0.5
+      particle_offset_z: 0.5
+    hit:
+    - class: EffectSingle
+      sound: entity_generic_explode
+      sound_pitch: 0.3
+      location: target
+    - class: EffectSingle
+      custom_sound: magic.shield_boom
+      sound_pitch: 2
+      location: both
+    - class: EffectSingle
+      location: target
+      color: 8A084B
+      firework: burst
+    - class: EffectSingle
+      target_offset: 0,0.5,0
+      location: target
+      color: 8A084B
+      firework: burst
+      particle: explosion_huge
+  parameters:
+    charges: 3
+    charge_regeneration: 1
+    allow_caster: true
+    target: any
+    gravity: 0.05
+    velocity: 100
+    allow_max_range: false
+    range: 32
+    break_blocks: false
+    size: 2
+    cooldown: 700
+    undo: 3000
+    undo_speed: 0.5
+    miss_effects: hit
+    miss: actions
+    check_destructible: false
+  costs:
+    mana: 50

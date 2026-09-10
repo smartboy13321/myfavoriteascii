@@ -1,0 +1,139 @@
+uncommonmechhisui:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:paper
+    count: 1
+    components:
+      minecraft:lore: '[{extra:[{bold:0b,color:"red",italic:1b,text:"Robot"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"A mechanical humanoid created for combat,"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"combining advanced technology with strategic"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"skills, highly effective on the battlefield.\""}],text:""},
+        {extra:[{color:"green",bold:1b,text:"Mech-Hisui"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Series: "},{color:"white",italic:0b,text:"Melty Blood"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Age: "},{color:"white",italic:0b,text:"Unknown"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Likes: "},{color:"white",italic:0b,text:"Combat, strategy"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Dislikes: "},{color:"white",italic:0b,text:"Malfunctions, inefficiency"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Signature: "},{color:"white",italic:0b,text:"Advanced weaponry, tactics"}],text:""}]'
+      minecraft:custom_name: '{extra:[{text:"Mech-Hisui "},{color:"gray",text:"["},{color:"green",text:"Uncommon"},{color:"gray",text:"]"}],text:""}'
+    schema_version: 1
+
+uncommonrobofortune:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:paper
+    count: 1
+    components:
+      minecraft:lore: '[{extra:[{bold:0b,color:"red",italic:1b,text:"Robot"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"An upgraded mechanical version of Ms. Fortune,"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"retaining cat-like agility and combat skills,"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"optimized for precision strikes.\""}],text:""},
+        {extra:[{color:"green",bold:1b,text:"Robo-Fortune"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Series: "},{color:"white",italic:0b,text:"Skullgirls"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Age: "},{color:"white",italic:0b,text:"Unknown"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Likes: "},{color:"white",italic:0b,text:"Efficiency, combat"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Dislikes: "},{color:"white",italic:0b,text:"Errors, damage"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Signature: "},{color:"white",italic:0b,text:"Precision attacks, agility"}],text:""}]'
+      minecraft:custom_name: '{extra:[{text:"Robo-Fortune "},{color:"gray",text:"["},{color:"green",text:"Uncommon"},{color:"gray",text:"]"}],text:""}'
+    schema_version: 1
+
+uncommonjacko:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:paper
+    count: 1
+    components:
+      minecraft:lore: '[{extra:[{bold:0b,color:"red",italic:1b,text:"Robot"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"A combat robot with a human-like interface,"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"specializing in heavy weapons and precise"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"operations in battle.\""}],text:""},
+        {extra:[{color:"green",bold:1b,text:"Jack-O"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Series: "},{color:"white",italic:0b,text:"Guilty Gear"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Age: "},{color:"white",italic:0b,text:"Unknown"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Likes: "},{color:"white",italic:0b,text:"Combat, efficiency"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Dislikes: "},{color:"white",italic:0b,text:"Malfunctions, interference"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Signature: "},{color:"white",italic:0b,text:"Heavy weaponry, tactics"}],text:""}]'
+      minecraft:custom_name: '{extra:[{text:"Jack-O "},{color:"gray",text:"["},{color:"green",text:"Uncommon"},{color:"gray",text:"]"}],text:""}'
+    schema_version: 1
+
+uncommonelphelt:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:paper
+    count: 1
+    components:
+      minecraft:lore: '[{extra:[{bold:0b,color:"red",italic:1b,text:"Robot"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"A skilled android marksman from Guilty Gear,"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"adept at both ranged and close combat."}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"Optimized for battlefield versatility.\""}],text:""},
+        {extra:[{color:"green",bold:1b,text:"Elphelt"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Series: "},{color:"white",italic:0b,text:"Guilty Gear"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Age: "},{color:"white",italic:0b,text:"Unknown"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Likes: "},{color:"white",italic:0b,text:"Targeting, precision"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Dislikes: "},{color:"white",italic:0b,text:"Failure, interference"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Signature: "},{color:"white",italic:0b,text:"Ranged combat, dual pistols"}],text:""}]'
+      minecraft:custom_name: '{extra:[{text:"Elphelt "},{color:"gray",text:"["},{color:"green",text:"Uncommon"},{color:"gray",text:"]"}],text:""}'
+    schema_version: 1
+
+uncommonroboky:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:paper
+    count: 1
+    components:
+      minecraft:lore: '[{extra:[{bold:0b,color:"red",italic:1b,text:"Robot"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"A humanoid combat robot from Guilty Gear,"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"designed for melee efficiency and battlefield"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"adaptability.\""}],text:""},
+        {extra:[{color:"green",bold:1b,text:"Robo-Ky"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Series: "},{color:"white",italic:0b,text:"Guilty Gear"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Age: "},{color:"white",italic:0b,text:"Unknown"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Likes: "},{color:"white",italic:0b,text:"Combat, adaptability"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Dislikes: "},{color:"white",italic:0b,text:"Malfunctions, inefficiency"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Signature: "},{color:"white",italic:0b,text:"Melee combat, robotics"}],text:""}]'
+      minecraft:custom_name: '{extra:[{text:"Robo-Ky "},{color:"gray",text:"["},{color:"green",text:"Uncommon"},{color:"gray",text:"]"}],text:""}'
+    schema_version: 1
+
+uncommonnu:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:paper
+    count: 1
+    components:
+      minecraft:lore: '[{extra:[{bold:0b,color:"red",italic:1b,text:"Robot"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"A precise and relentless android from Guilty Gear,"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"capable of high-speed combat and strategic"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"maneuvers on the battlefield.\""}],text:""},
+        {extra:[{color:"green",bold:1b,text:"Nu-13"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Series: "},{color:"white",italic:0b,text:"Guilty Gear"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Age: "},{color:"white",italic:0b,text:"Unknown"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Likes: "},{color:"white",italic:0b,text:"Precision, strategy"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Dislikes: "},{color:"white",italic:0b,text:"Malfunctions, failure"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Signature: "},{color:"white",italic:0b,text:"High-speed combat, robotics"}],text:""}]'
+      minecraft:custom_name: '{extra:[{text:"Nu-13 "},{color:"gray",text:"["},{color:"green",text:"Uncommon"},{color:"gray",text:"]"}],text:""}'
+    schema_version: 1
+
+uncommonlambda:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:paper
+    count: 1
+    components:
+      minecraft:lore: '[{extra:[{bold:0b,color:"red",italic:1b,text:"Robot"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"A highly advanced android from Guilty Gear,"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"with combat and reconnaissance capabilities,"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"designed for versatility and precision.\""}],text:""},
+        {extra:[{color:"green",bold:1b,text:"Lambda-11"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Series: "},{color:"white",italic:0b,text:"Guilty Gear"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Age: "},{color:"white",italic:0b,text:"Unknown"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Likes: "},{color:"white",italic:0b,text:"Combat, precision"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Dislikes: "},{color:"white",italic:0b,text:"Malfunctions, unpredictability"}],text:""},
+        {extra:[{color:"green",text:"*･ﾟ✧Signature: "},{color:"white",italic:0b,text:"Combat versatility, reconnaissance"}],text:""}]'
+      minecraft:custom_name: '{extra:[{text:"Lambda-11 "},{color:"gray",text:"["},{color:"green",text:"Uncommon"},{color:"gray",text:"]"}],text:""}'
+    schema_version: 1

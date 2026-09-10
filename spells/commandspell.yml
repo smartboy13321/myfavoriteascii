@@ -1,0 +1,160 @@
+commandspell:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "msg @p did you forget to override the command parameter?"
+
+chooseclass_gunner:
+  actions:
+    cast:
+      - class: Command
+        command: "say chooseclass_gunner @p"
+      - class: Command
+        command: "say 2ndcommand chooseclass_gunner @p"
+
+star:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "warp star @p"
+  icon: beacon
+
+justice:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "warp justice @p"
+  icon: beacon
+
+judgement:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "warp judgement @p"
+  icon: beacon
+
+fortune:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "warp fortune @p"
+  icon: beacon
+
+death:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "warp death @p"
+  icon: beacon
+
+temperance:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "warp temperance @p"
+  icon: beacon
+
+strength:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "warp strength @p"
+  icon: beacon
+
+faith:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "warp faith @p"
+  icon: beacon
+
+sun:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "warp sun @p"
+  icon: beacon
+
+hope:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "warp hope @p"
+  icon: beacon
+
+moon:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "warp moon @p"
+  icon: beacon
+
+spawn:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "warp spawn @p"
+  icon: beacon
+
+courtyard:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "warp courtyard @p"
+  icon: blue_stained_glass_pane
+
+shoppes:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "warp shoppes @p"
+  icon: purple_stained_glass_pane
+
+bank:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "warp bank @p"
+  icon: magenta_stained_glass_pane
+
+garden:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+  parameters:
+    command: "warp garden @p"
+  icon: pink_stained_glass_pane

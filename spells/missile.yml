@@ -1,0 +1,201 @@
+missile:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  icon: missile
+  upgrade_required_casts: 30
+  category: combat
+  worth: 150
+  earns: 20
+  earns_cooldown_scale: 0.05
+  actions:
+    cast:
+    #- class: Message
+      #message_type: chat
+      #requires_entity_target: true
+      #message: "&f &f &f &f &eYour &b@spell &edeals @damage_dealt damage to $target"
+    #- class: Message
+      # message_type: chat
+      # requires_target: false
+      # message: "&bWhoosh! &fA concentration of magical energy soars in front of you."
+    - class: CustomProjectile
+      actions:
+      - class: Damage
+      - class: BreakBlock
+        ignore_result: true
+  effects:
+    cast:
+    - sound: block_beacon_power_select
+      sound_pitch: 1.8
+      sound_volume: 0.9
+    - sound: entity_arrow_shoot
+      sound_pitch: 2
+      sound_volume: 0.2
+    - sound: entity_guardian_attack
+      sound_pitch: 1.5
+      sound_volume: 0.2
+    - sound: magic.zap_crack
+      sound_volume: 0.75
+      location: origin
+      color_override: color
+      effectlib:
+        class: ConeEffect
+        iterations: 10
+        particle: dust_color_transition
+        to_color: '#222222'
+        lengthGrow: 0.1
+        radiusGrow: 0.003
+        updateLocations: false
+        updateDirections: false
+        particle_count: 8
+        particle_offset_y: 0.1
+        particle_offset_x: 0.1
+        particle_offset_z: 0.1
+    tick:
+    - particle: dust_color_transition
+      color: '#FFFFFF'
+      location: target
+      particle_count: 4
+      particle_offset_y: 0.2
+      particle_offset_x: 0.2
+      particle_offset_z: 0.2
+      particle_size: 1
+    break:
+    - class: EffectSingle
+      location: target
+      particle: block_crack
+      particle_count: 100
+      particle_offset_x: 0.6
+      particle_offset_y: 0.6
+      particle_offset_z: 0.6
+    hit_block:
+    - class: EffectSingle
+      location: target
+      particle: block_crack
+      particle_count: 30
+      particle_offset_x: 0.2
+      particle_offset_y: 1
+      particle_offset_z: 0.2
+    hit_entity:
+    - class: EffectSingle
+      location: target
+      particle: redstone
+      particle_count: 30
+      particle_offset_x: 0.2
+      particle_offset_y: 0.2
+      particle_offset_z: 0.2
+    hit:
+    - sound: entity_player_attack_knockback
+      sound_pitch: 2
+      location: target
+    - class: EffectSingle
+      location: target
+      particle: fireworks_spark
+      particle_count: 10
+      particle_offset_x: 0.3
+      particle_offset_y: 0.3
+      particle_offset_z: 0.3
+      sound: magic.zap
+      sound_volume: 0.3
+      particle_data: 0.1
+    headshot:
+    - sound: entity_player_attack_knockback
+      sound_pitch: 2
+      location: target
+    - class: EffectSingle
+      location: target
+      particle: fireworks_spark
+      particle_count: 20
+      particle_offset_y: 0.2
+      particle_offset_x: 0.2
+      particle_offset_z: 0.2
+      particle_data: 0.1
+      sound: magic.zap
+      sound_volume: 0.3
+    - sound: entity_player_attack_crit
+      sound_pitch: 0.8
+      location: target
+      particle: crit_magic
+      particle_count: 30
+      particle_offset_y: 1
+      particle_offset_x: 1
+      particle_offset_z: 1
+      particle_data: 0.5
+  headshot_parameters:
+    damage_multiplier: 1.5
+  parameters:
+    allow_max_range: true
+    velocity: 200
+    range: 24
+    hitbox: true
+    target_type: Damageable
+    player_damage: 6
+    entity_damage: 6
+    target_breakables: 1
+    cooldown: 0
+    charges: 3
+    charge_regeneration: 0.66
+    reorient: false
+    destructible: solid
+    destructible_durability: 50
+    break_durability: 2
+    undo: 10000
+  costs:
+    mana: 10
+
+missile|2:
+  upgrade_required_casts: 50
+  earns_cooldown_scale: 0.1
+  earns: 15
+  parameters:
+    range: 32
+    charges: 4
+    player_damage: 6
+    entity_damage: 6
+    target_breakables: 1
+    break_durability: 3
+  costs:
+    mana: 10
+
+
+missile|3:
+  upgrade_required_path: student
+  upgrade_required_casts: 50
+  earns_cooldown_scale: 1
+  earns: 10
+  parameters:
+    range: 48
+    charges: 5
+    player_damage: 6
+    entity_damage: 6
+    target_breakables: 2
+    break_durability: 4
+  costs:
+    mana: 10
+
+
+missile|4:
+  upgrade_required_path: apprentice
+  earns: 7
+  parameters:
+    range: 64
+    charges: 6
+    player_damage: 6
+    entity_damage: 8
+    target_breakables: 3
+    break_durability: 5
+  costs:
+    mana: 10
+
+
+missile|5:
+  upgrade_required_path: apprentice
+  parameters:
+    range: 64
+    charges: 7
+    player_damage: 6
+    entity_damage: 10
+    target_breakables: 3
+    break_durability: 5
+  costs:
+    mana: 10
+

@@ -1,0 +1,100 @@
+commonai:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:paper
+    count: 1
+    components:
+      minecraft:lore: '[{extra:[{bold:0b,color:"red",italic:1b,text:"Idol"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"A rising star in the entertainment world,"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"capturing hearts with her charm and"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"dedication. Inspires fans with her passion."}],text:""},
+        {extra:[{color:"aqua",bold:1b,text:"Ai Hoshino"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Series: "},{color:"white",italic:0b,text:"Oshi No Ko"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Age: "},{color:"white",italic:0b,text:"16"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Likes: "},{color:"white",italic:0b,text:"Performing, attention"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Dislikes: "},{color:"white",italic:0b,text:"Failure, losing fans"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Signature: "},{color:"white",italic:0b,text:"Singing, stage presence"}],text:""}]'
+      minecraft:custom_name: '{extra:[{text:"Ai "},{color:"gray",text:"["},{color:"aqua",text:"Common"},{color:"gray",text:"]"}],text:""}'
+    schema_version: 1
+
+commonruby:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:paper
+    count: 1
+    components:
+      minecraft:lore: '[{extra:[{bold:0b,color:"red",italic:1b,text:"Idol"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"The younger sister of Ai Hoshino, curious"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"and energetic, pursuing her dreams of"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"becoming an idol while learning from her"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"sister.\""}],text:""},
+        {extra:[{color:"aqua",bold:1b,text:"Ruby Hoshino"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Series: "},{color:"white",italic:0b,text:"Oshi No Ko"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Age: "},{color:"white",italic:0b,text:"12"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Likes: "},{color:"white",italic:0b,text:"Idol activities, music"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Dislikes: "},{color:"white",italic:0b,text:"Injustice, being ignored"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Signature: "},{color:"white",italic:0b,text:"Enthusiasm, vocal performance"}],text:""}]'
+      minecraft:custom_name: '{extra:[{text:"Ruby "},{color:"gray",text:"["},{color:"aqua",text:"Common"},{color:"gray",text:"]"}],text:""}'
+    schema_version: 1
+
+commonaqua:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:paper
+    count: 1
+    components:
+      minecraft:lore: '[{extra:[{bold:0b,color:"red",italic:1b,text:"Idol"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"A lively and charismatic idol, adored for"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"her energetic performances and playful"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"personality on stage.\""}],text:""},
+        {extra:[{color:"aqua",bold:1b,text:"Aqua"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Series: "},{color:"white",italic:0b,text:"Skullgirls"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Age: "},{color:"white",italic:0b,text:"17"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Likes: "},{color:"white",italic:0b,text:"Music, performing"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Dislikes: "},{color:"white",italic:0b,text:"Boredom, failure"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Signature: "},{color:"white",italic:0b,text:"Dance, singing"}],text:""}]'
+      minecraft:custom_name: '{extra:[{text:"Aqua "},{color:"gray",text:"["},{color:"aqua",text:"Common"},{color:"gray",text:"]"}],text:""}'
+    schema_version: 1
+
+commonannie:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:paper
+    count: 1
+    components:
+      minecraft:lore: '[{extra:[{bold:0b,color:"red",italic:1b,text:"Idol"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"A talented and dedicated idol from the"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"Skullgirls universe, captivating fans with"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"her performance skills and charm.\""}],text:""},
+        {extra:[{color:"aqua",bold:1b,text:"Annie"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Series: "},{color:"white",italic:0b,text:"Skullgirls"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Age: "},{color:"white",italic:0b,text:"16"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Likes: "},{color:"white",italic:0b,text:"Performing, fan interaction"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Dislikes: "},{color:"white",italic:0b,text:"Laziness, disrespect"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Signature: "},{color:"white",italic:0b,text:"Singing, dancing"}],text:""}]'
+      minecraft:custom_name: '{extra:[{text:"Annie "},{color:"gray",text:"["},{color:"aqua",text:"Common"},{color:"gray",text:"]"}],text:""}'
+    schema_version: 1
+
+commonaoi:
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4440
+    id: minecraft:paper
+    count: 1
+    components:
+      minecraft:lore: '[{extra:[{bold:0b,color:"red",italic:1b,text:"Idol"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"A bright and energetic performer, beloved"}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"for her charisma and positive attitude."}],text:""},
+        {extra:[{bold:0b,color:"white",italic:0b,text:"She encourages fans to follow their dreams.\""}],text:""},
+        {extra:[{color:"aqua",bold:1b,text:"Aoi"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Series: "},{color:"white",italic:0b,text:"Aikatsu!"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Age: "},{color:"white",italic:0b,text:"15"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Likes: "},{color:"white",italic:0b,text:"Performing, friends"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Dislikes: "},{color:"white",italic:0b,text:"Negativity, losing"}],text:""},
+        {extra:[{color:"aqua",text:"*･ﾟ✧Signature: "},{color:"white",italic:0b,text:"Singing, positivity"}],text:""}]'
+      minecraft:custom_name: '{extra:[{text:"Aoi "},{color:"gray",text:"["},{color:"aqua",text:"Common"},{color:"gray",text:"]"}],text:""}'
+    schema_version: 1

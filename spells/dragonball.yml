@@ -1,0 +1,52 @@
+dragonball:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  icon: dragonball
+  category: combat
+  pvp_restricted: true
+  worth: 800
+  earns: 12
+  actions:
+    cast:
+    - class: Projectile
+      actions:
+      - class: AreaOfEffect
+        actions:
+        - class: Damage
+  effects:
+    cast:
+    - class: EffectSingle
+      effectlib:
+        class: ConeEffect
+        iterations: 15
+        particle: dragon_breath
+        lengthGrow: 0.1
+      sound: entity_ender_dragon_shoot
+      sound_volume: 1
+      sound_pitch: 0.25
+    - class: EffectSingle
+      sound: entity_ender_dragon_growl
+      sound_volume: 0.9
+      sound_pitch: 0.5
+    projectile:
+    - class: EffectSingle
+      location: origin
+      effectlib:
+        class: SmokeEffect
+        iterations: 4
+        period: 5
+        particle: dragon_breath
+    hit:
+    - class: EffectSingle
+      location: target
+      color: FF00FF
+      firework: ball
+  parameters:
+    projectile: DragonFireball
+    cooldown: 100
+    start: 1
+    break_blocks: false
+    damage: 1
+    radius: 3
+  costs:
+    mana: 1

@@ -1,0 +1,285 @@
+chainlightning:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  icon: chainlightning
+  upgrade_required_path: apprentice
+  upgrade_required_casts: 50
+  category: combat
+  worth: 600
+  earns: 8
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+      - class: Electrify
+      - class: Damage
+      - class: Delay
+      - class: AreaOfEffect
+        actions:
+        - class: Asynchronous
+          actions:
+          - class: CustomProjectile
+            velocity: 150
+            actions:
+            - class: Damage
+            - class: Electrify
+            - class: Delay
+            - class: AreaOfEffect
+              target_count: 1
+              actions:
+              - class: CustomProjectile
+                actions:
+                - class: Damage
+            - class: Repeat
+              actions:
+              - class: Damage
+                player_damage: 0.5
+                entity_damage: 1
+              - class: Delay
+      - class: Repeat
+        actions:
+        - class: Damage
+        - class: Delay
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: magic.zap
+      location: origin
+    - sound: block_conduit_activate
+      sound_pitch: 1.75
+    projectile:
+    - class: EffectSingle
+      effectlib:
+        class: LineEffect
+        isZigZag: true
+        zigZags: 2
+        zigZagOffset: 0,0.05,0
+        length: 10
+        particles: 50
+        particle: redstone
+        color: FFF000
+        duration: 2000
+    - location: source
+      effectlib:
+        class: LineEffect
+        isZigZag: true
+        zigZags: 2
+        zigZagOffset: 0,0.05,0
+        length: 10
+        particles: 20
+        particle: fireworks_spark
+        particle_count: 4
+        particle_offset_x: 0.1
+        particle_offset_y: 0.1
+        particle_offset_z: 0.1
+        duration: 2000
+    tick:
+    - particle: fireworks_spark
+      particle_count: 2
+      particle_offset_x: 0.2
+      particle_offset_y: 0.2
+      particle_offset_z: 0.2
+      location: target
+    hit:
+    - sound: entity_guardian_attack
+      sound_pitch: 2
+      sound_volume: 0.5
+      location: target
+    - class: EffectSingle
+      sound: magic.zap_crack
+      sound_volume: 0.5
+      location: target
+      particle: fireworks_spark
+      particle_count: 10
+      particle_offset_x: 1
+      particle_offset_y: 1
+      particle_offset_z: 1
+    - sound: block_conduit_activate
+      sound_pitch: 1.8
+      location: target
+  parameters:
+    tick_size: 5
+    target: other
+    target_self: false
+    target_source: false
+    range: 48
+    velocity: 100
+    radius: 8
+    target_count: 3
+    target_type: Damageable
+    player_damage: 1.5
+    entity_damage: 2
+    delay: 250
+    repeat: 4
+    target_breakables: 1
+    cooldown: 20000
+    ignore_modified: true
+  costs:
+    mana: 75
+
+
+apostlebeam:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  icon: chainlightning
+  upgrade_required_path: apprentice
+  upgrade_required_casts: 50
+  category: combat
+  worth: 600
+  earns: 8
+  actions:
+    cast:
+    - class: AreaOfEffect
+      radius: 5
+      actions:
+        - class: CheckEntity
+          allowed_entities: player
+          allow_caster: true
+          actions:
+            - class: PotionEffect
+              duration: 2000
+              add_effects:
+                regeneration: 2
+            - class: PlayEffects
+              effects: heal
+    - class: CustomProjectile
+      actions:
+      - class: CheckEntity
+        denied_entities: player
+        actions:
+          - class: Damage
+          - class: Delay
+          - class: AreaOfEffect
+      - class: AreaOfEffect
+        actions:
+        - class: Asynchronous
+          actions:
+          - class: CustomProjectile
+            velocity: 150
+            actions:
+            - class: CheckEntity
+              allowed_entities: player
+              actions:
+                - class: PotionEffect
+                  duration: 2000
+                  add_effects:
+                    regeneration: 2
+            - class: CheckEntity
+              denied_entities: player
+              actions:
+                - class: Damage
+                - class: Delay
+                - class: AreaOfEffect
+                  target_count: 1
+                  actions:
+                    - class: CustomProjectile
+                      actions:
+                        - class: Damage
+                - class: Repeat
+                  actions:
+                    - class: Damage
+                      entity_damage: 1
+                    - class: Delay
+      - class: Repeat
+        actions:
+        - class: CheckEntity
+          allowed_entities: player
+          actions:
+            - class: PotionEffect
+              duration: 2000
+              add_effects:
+                regeneration: 2
+        - class: CheckEntity
+          denied_entities: player
+          actions:
+            - class: Damage
+            - class: Delay
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: magic.shimmer
+      location: origin
+    - sound: item_crossbow_shoot
+      sound_pitch: 1.75
+    projectile:
+    - class: EffectSingle
+      effectlib:
+        class: LineEffect
+        isZigZag: true
+        zigZags: 2
+        zigZagOffset: 0,0.05,0
+        length: 10
+        particles: 50
+        particle: redstone
+        color: FFFEEB
+        duration: 2000
+    - location: source
+      effectlib:
+        class: LineEffect
+        isZigZag: true
+        zigZags: 2
+        zigZagOffset: 0,0.05,0
+        length: 10
+        particles: 20
+        particle: fireworks_spark
+        particle_count: 4
+        particle_offset_x: 0.1
+        particle_offset_y: 0.1
+        particle_offset_z: 0.1
+        duration: 2000
+    tick:
+    - particle: fireworks_spark
+      particle_count: 2
+      particle_offset_x: 0.2
+      particle_offset_y: 0.2
+      particle_offset_z: 0.2
+      location: target
+    hit:
+    - sound: entity_guardian_attack
+      sound_pitch: 2
+      sound_volume: 0.5
+      location: target
+    - class: EffectSingle
+      sound: magic.zap_crack
+      sound_volume: 0.5
+      location: target
+      particle: fireworks_spark
+      particle_count: 10
+      particle_offset_x: 1
+      particle_offset_y: 1
+      particle_offset_z: 1
+    - sound: block_conduit_activate
+      sound_pitch: 1.8
+      location: target
+  parameters:
+    amount: 1
+    tick_size: 5
+    target: any
+    range: 48
+    velocity: 100
+    radius: 8
+    target_count: 3
+    target_type: LivingEntity
+    player_damage: 1.5
+    entity_damage: 2
+    delay: 250
+    repeat: 4
+    target_breakables: 1
+    cooldown: 0
+    ignore_modified: true
+  costs:
+    mana: 75
+
+chainlightning|2:
+  upgrade_required_path: master
+  upgrade_required_casts: 50
+  parameters:
+    target_count: 5
+
+
+chainlightning|3:
+  upgrade_required_path: master
+  upgrade_required_casts: 50
+  parameters:
+    target_count: 8
+

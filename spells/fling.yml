@@ -1,0 +1,79 @@
+fling:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  icon: fling
+  alias: leap
+  category: utility
+  tags: nojail
+  worth: 400
+  earns: 2
+  upgrade_required_path: student
+  upgrade_required_casts: 50
+  glide_restricted: true
+  actions:
+    cast:
+    - class: Message
+      message_type: chat
+      message: "&f &f &f &f &eYou cast &b@spell&e"
+    - class: Velocity
+    - class: FallProtection
+  effects:
+    cast:
+    - class: EffectSingle
+      sound: entity_ender_dragon_flap
+      sound_volume: 1
+      effectlib:
+        class: Trace
+        iterations: 30
+        particle_offset_x: 1
+        particle_offset_y: 1
+        particle_offset_z: 1
+        particle_count: 2
+        speed: 2
+        particle: spell
+    land:
+    - sound: block_stone_step
+      sound_pitch: 0.7
+    - class: EffectRing
+      particle: block_crack
+      source_location: feet
+      period: 4
+      iterations: 3
+      particle_count: 80
+      radius: 4
+      particle_offset_x: 0.9
+      particle_offset_z: 0.9
+      particle_offset_y: 0.1
+  parameters:
+    duration: 20000
+    target: self
+    min_speed: 2.5
+    max_speed: 1.0
+    bypass_confusion: true
+    cooldown: 0
+    charges: 1
+    charge_regeneration: 0.66
+  alternate_sneak_parameters:
+    min_speed: 2.0
+    max_speed: 2.0
+  costs:
+    mana: 25
+
+fling|2:
+  upgrade_required_path: apprentice
+  upgrade_required_casts: 100
+  parameters:
+    charges: 2
+
+
+fling|3:
+  upgrade_required_path: master
+  upgrade_required_casts: 150
+  parameters:
+    charges: 3
+
+
+fling|4:
+  parameters:
+    charges: 4
+

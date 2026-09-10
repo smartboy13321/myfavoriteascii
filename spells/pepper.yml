@@ -1,0 +1,113 @@
+pepper:
+    # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+    inherit: false
+    icon: spell_icon:160
+    icon_disabled: spell_icon_disabled:160
+    icon_url: http://textures.minecraft.net/texture/2ba95570c7b712713632d4c0d2fc66906613d3850a596a0267c6d763fe741ac
+    category: combat
+    quiet: 0
+    loud: true
+    name: Pepper Shot
+    require_health_percentage: 100
+    actions:
+        cast:
+        - class: PlaySound
+          radius: 20
+          sound_volume: 2
+          sound_pitch: 2
+          sound: entity_zombie_attack_wooden_door
+        - class: CustomProjectile
+          actions:
+          - class: Damage
+    effects:
+        cast:
+        -  particle: sweep_attack
+           location: origin_to_selection
+           particle_offset_x: 0.1
+           particle_offset_y: 0
+           particle_offset_z: 0.1
+           particle_count: 3
+        -  class: EffectSingle
+           location: origin
+           color_override: color
+        tick:
+        - particle: end_rod
+          color: "#f5f5f5"
+          location: target
+          particle_count: 4
+          particle_offset_x: 0.1
+          particle_offset_y: 0
+          particle_offset_z: 0.1
+        - particle: crit_magic
+          effectlib:
+            particle: redstone
+            period: 25
+            color: "#e0ffff"
+            iterations: 1
+        - particle: crit_magic
+          effectlib:
+            delay: 25
+            particle: redstone
+            period: 25
+            color: "#ee82ee"
+            iterations: 1
+          location: target
+          particle_count: 4
+          particle_offset_x: 0.3
+          particle_offset_y: 0
+          particle_offset_z: 0.3
+        hit_block:
+        -  class: EffectSingle
+           location: target
+           particle: block_crack
+           particle_count: 50
+           particle_offset_x: 0.2
+           particle_offset_y: 1
+           particle_offset_z: 0.2
+        hit_entity:
+        -  class: EffectSingle
+           location: target
+           particle: redstone
+           particle_count: 30
+           particle_offset_x: 0.2
+           particle_offset_y: 0.2
+           particle_offset_z: 0.2
+        hit:
+        -  sound: entity_player_attack_knockback
+           sound_pitch: 2
+           location: both
+           sound_volume: 2
+        -  sound: entity_player_hurt
+           sound_pitch: 0.5
+           location: target
+           sound_volume: 2
+        -  sound: block_wooden_button_click_on
+           sound_pitch: 1.5
+           location: both
+           sound_volume: 2
+        -  class: EffectSingle
+           location: target
+           particle: fireworks_spark
+           particle_count: 10
+           particle_offset_x: 0.3
+           particle_offset_y: 0.3
+           particle_offset_z: 0.3
+           sound: block_chain_break
+           sound_volume: 2
+           sound_pitch: 2
+           particle_data: 0.1
+    parameters:
+        allow_max_range: true
+        velocity: 1000
+        range: 72
+        hitbox: true
+        hitbox_size: 2
+        target_type: LivingEntity
+        target: any
+        player_damage: 4
+        entity_damage: 4
+        target_breakables: 1
+        cooldown: 0
+        charges: 8
+        charge_regeneration: 1
+        color: "00FFAA"

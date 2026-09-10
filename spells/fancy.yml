@@ -1,0 +1,52 @@
+# This is the key name of this spell
+# It must be unique across the server, and is used in configs and commands such as /mage, /wand and /mgive
+# to refer to this spell.
+fancy:
+ actions:
+   cast:
+#Removing all other prefixes
+      - class: Command
+        command: "lp user @p permission unset prefix.1.:･ﾟ✧"
+      - class: Command
+        command: "say lp user @p permission unset prefix.1.:･ﾟ✧"
+      - class: Command
+        command: "lp user @p permission unset prefix.1.☆❤⃛。"
+      - class: Command
+        command: "say lp user @p permission unset prefix.1.☆❤⃛。"
+      - class: Command
+        command: "lp user @p permission unset prefix.1.｡❤⃛ೄ"
+      - class: Command
+        command: "say lp user @p permission unset prefix.1.｡❤⃛ೄ"
+      - class: Command
+        command: "lp user @p permission unset prefix.1.｡・:❤⃛♡"
+      - class: Command
+        command: "say lp user @p permission unset prefix.1.｡・:❤⃛♡"
+      - class: Command
+        command: "lp user @p permission unset prefix.1.Ƹ̵̡Ӝ̵̨̄Ʒ"
+      - class: Command
+        command: "say lp user @p permission unset prefix.1.Ƹ̵̡Ӝ̵̨̄Ʒ"
+      - class: Command
+        command: "lp user @p permission unset prefix.1.≧◡≦"
+      - class: Command
+        command: "say lp user @p permission unset prefix.1.≧◡≦"
+      - class: Command
+        command: "lp user @p permission unset prefix.1.>‿‿◕"
+      - class: Command
+        command: "say lp user @p permission unset prefix.1.>‿‿◕"
+      - class: Command
+        command: "lp user @p permission unset prefix.1.( ･_･)♡"
+      - class: Command
+        command: "say lp user @p permission unset prefix.1.( ･_･)♡"
+      - class: Command
+        command: "lp user @p permission unset prefix.1.♪(／^.^)／☆♪"
+      - class: Command
+        command: "say lp user @p permission unset prefix.1.♪(／^.^)／☆♪"
+      - class: Command
+        command: "lp user @p permission unset prefix.1.thanks♪(･ω･)ﾉ"
+      - class: Command
+        command: "say lp user @p permission unset prefix.1.thanks♪(･ω･)ﾉ"
+  #Setting new prefix
+      - class: Command
+        command: "lp user @p meta addprefix 1 *:･ﾟ✧"
+      - class: Command
+        command: "say lp user @p meta addprefix 1 *:･ﾟ✧"

@@ -1,0 +1,33 @@
+# This is the key name of this spell
+# It must be unique across the server, and is used in configs and commands such as /mage, /wand and /mgive
+# to refer to this spell.
+startershop:
+  # These track who created what spells, you can remove them if you want
+  creator: spacecostume1
+  creator_id: 63922a05-1d30-4fb4-9be0-8452537be79f
+  # Name and description may be added here and will appear in lore for this spell.
+  name: Starter Items (Free)
+  description: Starter shop. Free items for newcomers and individuals in need.
+  # Choose an icon, used when showing this spell in a wand inventory.
+  icon: stick
+  # Actions define what this spell does when cast. In this case we will damage the target.
+  actions:
+    # Actions can be triggered from a few different events, but the most common is "cast",
+    # which will happen immediately when the spell is cast.
+    cast:
+    - class: Command
+  # Effects are particle or sound effects that are shown when the spell is cast.
+  effects:
+    cast:
+    - location: target
+      effectlib:
+        class: Sphere
+        # This effect will last 2 seconds
+        duration: 2000
+    - sound: magic.zap
+  # Parameters change how a spell behaves, these may be base spell parameters or
+  # specific to the set of actions you are using.
+  parameters:
+    command: "say @p clicked bee and ran this server command when @spell was cast"
+    range: 32
+    damage: 10

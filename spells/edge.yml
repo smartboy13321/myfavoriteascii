@@ -1,0 +1,174 @@
+edge:
+  inherit: false
+  upgrade_required_path: apprentice
+  parameters:
+    range: 256
+    player_damage: 4
+    entity_damage: 59
+    target_breakables: 3
+    break_durability: 5
+    velocity: 48
+    damage: 61
+    charges: 0
+    charge_regeneration: 0
+    cooldown: 1500
+  costs:
+    mana: 0
+  creator: spacecostume1
+  creator_id: 63922a05-1d30-4fb4-9be0-8452537be79f
+  name: Magic Missile ▽ (EDGE)
+  description: Damage Your Target.
+  icon: stick
+  actions:
+    cast:
+    - class: Interval
+      interval: 2
+      duration: 1500
+      actions:
+        - class: PlaySound
+          sound: block_note_block_snare
+          radius: 16
+    - class: Delay
+      delay: 1500
+    - class: CustomProjectile
+      actions:
+      - class: AreaOfEffect
+        radius: 4
+        target_count: 5
+        actions:
+        - class: Damage
+          damage: 59
+  effects:
+    projectile:
+    - location: both
+      sound: block_note_block_hat
+      sound_pitch: 1.5
+      sound_volume: 10
+    cast:
+    - location: target
+      sound: block_note_block_pling
+      volume: 10
+      sound_pitch: 1
+    - location: both
+      sound: block_note_block_bass
+      sound_pitch: 1.9
+      volume: 10
+      delay: 1200
+    - location: both
+      sound: block_note_block_guitar
+      sound_pitch: 1
+      volume: 10
+      delay: 0
+    - location: target
+      sound: block_note_block_snare
+      sound_pitch: 1.5
+      volume: 10
+    - location: target
+      sound: block_note_block_bit
+      sound_pitch: 2.0
+      volume: 10
+    - location: both
+      sound: rock
+      sound_pitch: 1.9
+      volume: 10
+      delay: 925
+    - location: both
+      sound: block_note_block_basedrum
+      delay: 1100
+    - location: both
+      sound: block_amethyst_block_chime
+      delay: 1500
+    - location: both
+      sound: block_note_block_basedrum
+      delay: 1200
+    - location: origin
+      effectlib:
+        visible_range: 256
+        delay: 7
+        class: Text
+        period: 1
+        iterations: 8
+        text: ▽
+        particle: redstone
+        size: 0.08
+        particle_count: 3
+        particle_size: 1
+        update_directions: true
+        update_locations: true
+        color: '#000000'
+    - location: target
+      sound: ambient_basalt_deltas_additions
+      sound_pitch: 1.9
+      sound_volume: 10
+      effectlib:
+        visible_range: 256
+        class: Text
+        period: 2
+        text: ilovemygirlfriend
+        particle_size: 1
+        color: '#dc143c'
+        size: 0.2
+        auto_orient: true
+        particle: redstone
+        particle_count: 14
+        duration: 90
+    hit:
+    - location: origin
+      sound: entity_zombie_attack_iron_door
+      sound_pitch: 1.9
+      sound_volume: 10
+      sound_range: 4
+    - location: origin
+      sound: block_note_block_pling
+      sound_pitch: 1.9
+      sound_range: 128
+    - location: target
+      sound: block_note_block_hat
+      sound_range: 128
+      sound_volume: 10
+      effectlib:
+        class: Text
+        text: ▽
+        size: 0.5
+        radius: 1.5
+        auto_orient: true
+        particle_count: 42
+        radius_increase: 0.2
+        particle: redstone
+        duration: 300
+        color: '#000000'
+    tick:
+    - location: target
+      effectlib:
+        class: Dna
+        particle_size: 0.3
+        particle: redstone
+        color_base1: '#ffffff'
+        color_base2: '#000000'
+        color_helix: '#00008b'
+        iterations: 1
+        speed: 0.5
+        radius: 0.5
+        length: 0.5
+        base_interval: 1
+        particle_count: 2
+      particle: redstone
+      color: '#ffffff'
+      color_override: '#ffffff'
+      sound: block_amethyst_block_chime
+      sound_pitch: 1.8
+      sound_volume: 2
+      sound_range: 14
+      particle_count: 1
+      particle_offset_x: 0.9
+      particle_offset_y: 0.2
+      particle_offset_z: 0.75
+    - location: target
+      particle: redstone
+      particle_count: 7
+      particle_offset_x: 0
+      particle_offset_y: 0
+      particle_offset_z: 0
+      sound: entity_sheep_shear
+      sound_pitch: 1
+      sound_volume: 1.4

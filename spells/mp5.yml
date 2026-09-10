@@ -1,0 +1,20 @@
+mp5:
+  actions:
+        cast:
+        - class: PlaySound
+          radius: 20
+          sound_volume: 2
+          sound_pitch: 2
+          sound: entity_zombie_attack_wooden_door
+        - class: CustomProjectile
+          actions:
+          - class: Damage
+  inherit: ak47
+  parameters:
+    cooldown: 500
+    player_damage: 3
+    entity_damage: 6
+    range: 50
+    spread: 0.1
+    spread_movement_max: 0.4
+    velocity: 3500

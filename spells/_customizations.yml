@@ -1,0 +1,20 @@
+flashbangdmg:
+  parameters:
+    cooldown: 0
+    charges: ''
+  enabled: false
+star:
+  icon: beacon
+blaster:
+  parameters:
+    cooldown: 0
+    charges: 8
+    charge_regeneration: 1
+hardshot:
+  parameters:
+    charges: 15
+    charge_regeneration: 0.2
+pepper:
+  enabled: false
+peppershot:
+  earns_sp: ''

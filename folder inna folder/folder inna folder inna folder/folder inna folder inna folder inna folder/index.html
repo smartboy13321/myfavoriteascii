@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>myfavoriteascii.com / folder inna folder/folder inna folder inna folder/folder inna folder inna folder inna folder</title>
+    <style>
+        body { background-color: #c0c0c0; color: #000000; font-family: monospace; margin: 20px; }
+        a { color: #0000ff; text-decoration: underline; }
+        a:visited { color: #800080; }
+        table { width: 100%; border-collapse: collapse; background-color: #ffffff; }
+        th, td { border: 1px solid #808080; padding: 8px; text-align: left; vertical-align: middle; }
+        th { background-color: #d4d0c8; cursor: pointer; user-select: none; }
+        th:hover { background-color: #b1aeb5; }
+        .thumb { max-width: 120px; max-height: 90px; border: 1px solid #000; margin-top: 5px; display: block; }
+        audio { height: 30px; margin-top: 5px; }
+    </style>
+</head>
+<body>
+
+    <pre>    __________________________________________________
+   /                                                  \
+   |   WELCOME TO MY FAVORITE ASCII & FILE ARCHIVE    |
+   \__________________________________________________/
+
+       _~~-_
+      ( (`\
+       \   \  __   _
+        >   \/  \_/ \
+       /   /       \
+       \   \_/ \_/\_/
+        \___/</pre>
+
+    <hr>
+    <h2>// ARCHIVE / FOLDER INNA FOLDER/FOLDER INNA FOLDER INNA FOLDER/FOLDER INNA FOLDER INNA FOLDER INNA FOLDER</h2>
+    <p><i>Click table headers to sort. Click links to download or browse.</i></p>
+    <hr>
+
+    <table id="fileTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Filename ↕</th>
+                <th onclick="sortTable(1)">Type ↕</th>
+                <th onclick="sortTable(2)">Size ↕</th>
+                <th onclick="sortTable(3)">Date Added ↕</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><a href="../index.html">📁 .. (Parent Directory)</a></td>
+            <td>Folder</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr data-name="01 - the preacher said, ''jesus said'' (with billy graham).mp3" data-type="mp3 audio" data-size="8854998" data-date="1756406717.0">
+            <td><a href="01 - The Preacher Said, ''Jesus Said'' (with Billy Graham).mp3">🎵 01 - The Preacher Said, ''Jesus Said'' (with Billy Graham).mp3</a><br><audio controls preload="none"><source src="01 - The Preacher Said, ''Jesus Said'' (with Billy Graham).mp3"></audio></td>
+            <td>MP3 Audio</td>
+            <td>8.4 MB</td>
+            <td>2025-08-28 14:45</td>
+        </tr>
+        <tr data-name="3-21 billy graham is not qualified.mp3" data-type="mp3 audio" data-size="2317576" data-date="1756406624.0">
+            <td><a href="3-21 Billy Graham Is Not Qualified.mp3">🎵 3-21 Billy Graham Is Not Qualified.mp3</a><br><audio controls preload="none"><source src="3-21 Billy Graham Is Not Qualified.mp3"></audio></td>
+            <td>MP3 Audio</td>
+            <td>2.2 MB</td>
+            <td>2025-08-28 14:43</td>
+        </tr>
+        <tr data-name="a1 - nasenbluten - concrete compressor [billy graham remix].mp3" data-type="mp3 audio" data-size="7510016" data-date="1756428103.0">
+            <td><a href="A1 - Nasenbluten - Concrete Compressor [Billy Graham Remix].mp3">🎵 A1 - Nasenbluten - Concrete Compressor [Billy Graham Remix].mp3</a><br><audio controls preload="none"><source src="A1 - Nasenbluten - Concrete Compressor [Billy Graham Remix].mp3"></audio></td>
+            <td>MP3 Audio</td>
+            <td>7.2 MB</td>
+            <td>2025-08-28 20:41</td>
+        </tr>
+
+        </tbody>
+    </table>
+
+    <br><br>
+    <hr>
+    <address>Interactive retro archive. Powered by Python & client-side JS.</address>
+
+    <script>
+    function sortTable(n) {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById("fileTable");
+        switching = true;
+        dir = "asc";
+        while (switching) {
+            switching = false;
+            rows = table.rows;
+            for (i = 1; i < (rows.length - 1); i++) {
+                shouldSwitch = false;
+                let xVal = rows[i].getAttribute(n === 0 ? "data-name" : n === 1 ? "data-type" : n === 2 ? "data-size" : "data-date");
+                let yVal = rows[i + 1].getAttribute(n === 0 ? "data-name" : n === 1 ? "data-type" : n === 2 ? "data-size" : "data-date");
+
+                if (n === 2 || n === 3) {
+                    xVal = parseFloat(xVal);
+                    yVal = parseFloat(yVal);
+                }
+
+                if (dir == "asc") {
+                    if (xVal > yVal) { shouldSwitch = true; break; }
+                } else if (dir == "desc") {
+                    if (xVal < yVal) { shouldSwitch = true; break; }
+                }
+            }
+            if (shouldSwitch) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                switchcount++;
+            } else {
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+    </script>
+</body>
+</html>

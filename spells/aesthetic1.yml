@@ -1,0 +1,213 @@
+aesthetic1:
+  actions:
+    cast:
+      - class: Command
+        command: "lp user @p parent add aesthetic1"
+      - class: Command
+        command: "lp user @p parent remove aesthetic2"
+      - class: Command
+        command: "lp user @p parent remove aesthetic3"
+      - class: Command
+        command: "lp user @p parent remove aesthetic4"
+      - class: Command
+        command: "lp user @p parent remove happy"
+      - class: Command
+        command: "lp user @p parent remove wink"
+      - class: Command
+        command: "lp user @p parent remove love"
+      - class: Command
+        command: "lp user @p parent remove dance"
+      - class: Command
+        command: "lp user @p parent remove thanks"
+      - class: Command
+        command: "say hey"
+
+aesthetic2:
+  actions:
+    cast:
+      - class: Command
+        command: 
+      - class: Command
+        command: "lp user @p parent remove aesthetic1"
+      - class: Command
+        command: "lp user @p parent remove aesthetic3"
+      - class: Command
+        command: "lp user @p parent remove aesthetic4"
+      - class: Command
+        command: "lp user @p parent remove happy"
+      - class: Command
+        command: "lp user @p parent remove wink"
+      - class: Command
+        command: "lp user @p parent remove love"
+      - class: Command
+        command: "lp user @p parent remove dance"
+      - class: Command
+        command: "lp user @p parent remove thanks"
+
+aesthetic3:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+        command: "lp user @p parent add aesthetic3"
+      - class: Command
+        command: "lp user @p parent remove aesthetic2"
+      - class: Command
+        command: "lp user @p parent remove aesthetic1"
+      - class: Command
+        command: "lp user @p parent remove aesthetic4"
+      - class: Command
+        command: "lp user @p parent remove happy"
+      - class: Command
+        command: "lp user @p parent remove wink"
+      - class: Command
+        command: "lp user @p parent remove love"
+      - class: Command
+        command: "lp user @p parent remove dance"
+      - class: Command
+        command: "lp user @p parent remove thanks"
+
+aesthetic4:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+        command: "lp user @p parent add aesthetic4"
+      - class: Command
+        command: "lp user @p parent remove aesthetic2"
+      - class: Command
+        command: "lp user @p parent remove aesthetic3"
+      - class: Command
+        command: "lp user @p parent remove aesthetic1"
+      - class: Command
+        command: "lp user @p parent remove happy"
+      - class: Command
+        command: "lp user @p parent remove wink"
+      - class: Command
+        command: "lp user @p parent remove love"
+      - class: Command
+        command: "lp user @p parent remove dance"
+      - class: Command
+        command: "lp user @p parent remove thanks"
+
+happy:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+        command: "lp user @p parent add happy"
+      - class: Command
+        command: "lp user @p parent remove aesthetic2"
+      - class: Command
+        command: "lp user @p parent remove aesthetic3"
+      - class: Command
+        command: "lp user @p parent remove aesthetic4"
+      - class: Command
+        command: "lp user @p parent remove aesthetic1"
+      - class: Command
+        command: "lp user @p parent remove wink"
+      - class: Command
+        command: "lp user @p parent remove love"
+      - class: Command
+        command: "lp user @p parent remove dance"
+      - class: Command
+        command: "lp user @p parent remove thanks"
+
+wink:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+        command: "lp user @p parent add wink"
+      - class: Command
+        command: "lp user @p parent remove aesthetic2"
+      - class: Command
+        command: "lp user @p parent remove aesthetic3"
+      - class: Command
+        command: "lp user @p parent remove aesthetic4"
+      - class: Command
+        command: "lp user @p parent remove happy"
+      - class: Command
+        command: "lp user @p parent remove aesthetic1"
+      - class: Command
+        command: "lp user @p parent remove love"
+      - class: Command
+        command: "lp user @p parent remove dance"
+      - class: Command
+        command: "lp user @p parent remove thanks"
+
+love:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+        command: "lp user @p parent add love"
+      - class: Command
+        command: "lp user @p parent remove aesthetic2"
+      - class: Command
+        command: "lp user @p parent remove aesthetic3"
+      - class: Command
+        command: "lp user @p parent remove aesthetic4"
+      - class: Command
+        command: "lp user @p parent remove happy"
+      - class: Command
+        command: "lp user @p parent remove wink"
+      - class: Command
+        command: "lp user @p parent remove aesthetic1"
+      - class: Command
+        command: "lp user @p parent remove dance"
+      - class: Command
+        command: "lp user @p parent remove thanks"
+
+dance:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+        command: "lp user @p parent add dance"
+      - class: Command
+        command: "lp user @p parent remove aesthetic2"
+      - class: Command
+        command: "lp user @p parent remove aesthetic3"
+      - class: Command
+        command: "lp user @p parent remove aesthetic4"
+      - class: Command
+        command: "lp user @p parent remove happy"
+      - class: Command
+        command: "lp user @p parent remove wink"
+      - class: Command
+        command: "lp user @p parent remove love"
+      - class: Command
+        command: "lp user @p parent remove aesthetic1"
+      - class: Command
+        command: "lp user @p parent remove thanks"
+
+thanks:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+        command: "lp user @p parent add thanks"
+      - class: Command
+        command: "lp user @p parent remove aesthetic2"
+      - class: Command
+        command: "lp user @p parent remove aesthetic3"
+      - class: Command
+        command: "lp user @p parent remove aesthetic4"
+      - class: Command
+        command: "lp user @p parent remove happy"
+      - class: Command
+        command: "lp user @p parent remove wink"
+      - class: Command
+        command: "lp user @p parent remove love"
+      - class: Command
+        command: "lp user @p parent remove dance"
+      - class: Command
+        command: "lp user @p parent remove aesthetic1"
