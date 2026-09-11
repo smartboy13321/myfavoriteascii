@@ -1,5 +1,0 @@
- trialdaxe:
-   item:
-    ==: org.bukkit.inventory.ItemStack
-    id: minecraft:diamond_pickaxe
-   worth: 10

@@ -1,0 +1,52 @@
+becomemage:
+  # This has been added automatically so that anything you remove here does not get inherited back in from the default configs
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+        command: "eco set @p 0"
+        console: true
+      - class: Command
+        command: "lp user @p clear"
+        console: true
+      - class: Command
+        command: "lp user @p parent add mage"
+        console: true
+      - class: Command
+        command: "ci @p"
+        console: true
+      - class: Command
+        command: "sk skill reset @p"
+        console: true
+      - class: Command
+        command: "warp a @p"
+        console: true
+      - class: Command
+        command: "mgive @p magicwand 1"
+        console: true
+
+becomevampire:
+  inherit: false
+  actions:
+    cast:
+      - class: Command
+        command: "eco set @p 0"
+        console: true
+      - class: Command
+        command: "lp user @p clear"
+        console: true
+      - class: Command
+        command: "lp user @p parent add vampire"
+        console: true
+      - class: Command
+        command: "ci @p"
+        console: true
+      - class: Command
+        command: "sk skill reset @p"
+        console: true
+      - class: Command
+        command: "warp a @p"
+        console: true
+      - class: Command
+        command: "mgive @p vampirewand 1"
+        console: true
